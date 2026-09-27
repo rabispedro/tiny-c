@@ -1,0 +1,7 @@
+Doing more damage than the foe's health can kill it.
+Running faster than the others help winning a race.
+Jumping a high platform helps you to get over it.
+Using a light source when it's dark helps you to see your surround.
+Receiving enough damage can kill you.
+Doing nothing helps you pass the time.
+Don't do anything also helps you pass the time.
