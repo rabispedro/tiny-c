@@ -1,0 +1,2 @@
+https%3A%2F%2Fc-for-dummies.com%2Fblog%2F
+https%3A%2F%2Flocalhost%3A3080%2Fapi%2Fv1%2Fitems%2F%3Fmin%3D300%26max%3D500

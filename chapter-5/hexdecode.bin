@@ -1,0 +1,51 @@
+HEX DECODE v3.0 Filter (Ctrl+D to finish)
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define BYTES_PER_LINE 18
+#define LENGTH (BYTES_PER_LINE*3+1)
+
+int main() {
+	char *r, line[LENGTH];
+	int hex, ch, x=0;
+
+	r = fgets(line, LENGTH, stdin);
+
+	if (r == NULL || strncmp(line, "HEX ENCODE v1.0", 10) != 0) {
+		fprintf(stderr, "Invalid HEX ENCODE data\n");
+		exit(1);
+	}
+	
+	printf("HEX DECODE v3.0 Filter (Ctrl+D to finish)\n");
+	while((ch = getchar()) != EOF) {
+		line[x] = ch;
+		x++;
+
+		if (ch == '\n' || x == LENGTH) {
+			if(line[x-1] == '\n') {
+				line[x-1] = '\0';
+			} else {
+				line[x] = '\0';
+			}
+
+			if (strncmp(line, "HEX ENCODE END", 13) == 0) {
+				break;
+			}
+			
+
+			r = strtok(line, " ");
+			while(r) {
+				sscanf(r, "%02X", &hex);
+				printf("%c", hex);
+				r = strtok(NULL," ");
+			}
+			
+			x = 0;
+		}
+	}
+	printf("\nHEX DECODE END\n");
+	
+	return 0;
+}
+HEX DECODE END
