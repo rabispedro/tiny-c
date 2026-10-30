@@ -1,0 +1,8 @@
+drink
+water
+sleep
+act
+think
+talk
+clear
+revenge

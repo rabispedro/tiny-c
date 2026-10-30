@@ -1,0 +1,8 @@
+orange
+grape
+apple
+banana
+coffee
+tea
+juice
+beverage
