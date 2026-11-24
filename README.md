@@ -10,7 +10,7 @@ Exemplos de código e exercícios resolvidos do livro Tiny C.
 - [x] 4 - Caesarean Cipher
 - [x] 5 - Encoding and Decoding
 - [x] 6 - Password Generators
-- [ ] 7 - String Utilities
+- [x] 7 - String Utilities
 - [ ] 8 - Unicode and Wide Characters
 - [ ] 9 - Hex Dumper
 - [ ] 10 - Directory Tree
